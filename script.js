@@ -99,7 +99,7 @@ async function moreDetails() {
     }
   }
   
-  // Fetching all meals from API
+  // displaying the favourite meals
     async function displayFavoriteMeals() {
     mealsDiv.innerHTML = '';
   
