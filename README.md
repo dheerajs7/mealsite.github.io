@@ -1,4 +1,3 @@
-mealsite.github.io
 Meal App
 Creating and Meal website using HTML CSS and Vanilla JS. Fetching all the meals from the API 
 Following features are inlcuded:
