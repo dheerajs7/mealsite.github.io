@@ -1,0 +1,191 @@
+/* import Google font - popins*/
+    
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Poppins:wght@300;400&family=Urbanist:wght@300;400&display=swap');
+
+/* universal style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins', sans-serif;
+}
+/* style for container body */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background-image: url("https://png.pngtree.com/background/20210711/original/pngtree-e-commerce-taobao-jingdong-summer-food-festival-home-full-screen-sale-picture-image_1116451.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ /* style for navbar */
+ #navbar{
+    height: 60px; 
+    width:100%;
+    background: rgba(0, 0, 0,0.4); 
+    display: flex;
+    justify-content: end;   
+}
+/* style for favorite button */
+.fvrt{
+     font-size: 18px;
+    margin-right: 15px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+ 
+h1{
+    
+    color:#fff;
+    text-align: center;
+    font-size:60px
+}
+
+/* style for meal container */
+.meal-finder{
+    width: 100%;
+    max-width:100%px;
+    margin: -15px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+/* style for search bar*/
+.row{
+    height: 50px;
+    width:40%;
+    background:#fff;
+    display:flex ;
+    justify-content: center;
+    background:tansparent;
+    margin:10px ;
+    margin-left: 30%;
+    border-radius: 50px;
+     }
+     .row:hover{
+        background-color:lightgoldenrodyellow;
+    }
+
+input{
+    flex:1;
+    border:none;
+    outline:none;
+    border-radius: 50px;
+    padding:10px;
+    font-size: larger;
+    font-weight: 100;
+    background: transparent;
+}
+
+/* style for all the meals, images */
+#meals-div
+{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around ;
+    flex-wrap: wrap;
+}
+.images
+{
+    width: 300px;
+    height: 51vh;
+    margin: 20px 1% 2% 1%;
+    border: 1px solid #DFDFDF;
+    padding-bottom: 1%;
+    position: relative;
+    background: black;
+}
+
+.images h4
+{
+    text-align: center;
+    font-family:'jost', sans-serif;
+    color: #FDF3B7;
+    margin: 3%;
+}
+
+.images img
+{
+    width: 100%;
+    height:70%;
+}
+
+.images button
+{
+    background-color: #cccccc ;
+    width: 45%;
+    height: 12%;
+    color: #3C2C10;
+    margin-left: 8%;
+    margin-right: 30%;
+}
+
+
+.images a{
+    display: inline-block;
+    width: 14%;
+    height: 10%;
+    text-align: center;
+    padding-top: 2%;
+    border-radius: 50px;
+    color: white;
+    border: 1px solid white;
+}
+
+.clicked{
+    background-color: #DFDFDF !important;
+    color: red !important;
+}
+
+.images:hover{
+
+    box-shadow: 2px 2px 2px #DFDFDF,-2px -2px 2px #DFDFDF;
+
+}
+.border-circle
+{
+    border-radius: 50px;
+}
+
+/* style for details or recipe page */
+.details-page
+{
+    margin:30px;
+    border: 1px solid #DFDFDF;
+    border-radius: 50px;
+    height: 700px;
+    width: 700px;
+    color: white;
+    padding: 1%;
+    height: fit-content;
+    background: black;
+}
+
+.details-page h3
+{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #4d4d4d;
+    margin: 3%;
+}
+
+.details-page h5
+{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#3C2C10;
+    margin: 0 50% 0 5%;
+    display: inline;
+}
+
+.details-page img
+{
+    margin-left: 10%;
+    width: 80%;
+    height:40vh;
+    border-radius: 20px;
+}
