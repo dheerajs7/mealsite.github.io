@@ -1,3 +1,4 @@
+// Get DOM elements
 const searchbox =document.getElementById('search-bar');
 const favorite =document.getElementById('favourite-meals');
 const mealsDiv =document.getElementById('meals-div');
@@ -6,20 +7,24 @@ const mealsDiv =document.getElementById('meals-div');
 let favouriteArr =[];
 let URL;
 
-searchbox.addEventListener('input', displaySearchResults); // input event for searchbox
-favorite.addEventListener('click', displayFavoriteMeals);// click event for favourite button 
-
-function displaySearchResults() {
-    let keyword = searchbox.value;
-    URL = `https://www.themealdb.com/api/json/v1/1/search.php?s=${keyword}`;
-    createMeals(URL);
-}
-  
-if(!localStorage.getItem ("favouriteArr")){
+// favourite array is store in locastorge if not then initialze
+  if(localStorage.getItem ("favouriteArr")){
     localStorage.setItem("favouriteArr", JSON.stringify(favouriteArr));
 }
 else{
     favouriteArr= JSON.parse(localStorage.getItem("favouriteArr"));
+}
+
+// input event for searchbox
+searchbox.addEventListener('input', displaySearchResults);
+// click event for favourite button 
+favorite.addEventListener('click', displayFavoriteMeals);
+
+//function to display search results
+function displaySearchResults() {
+    let keyword = searchbox.value;
+    URL = `https://www.themealdb.com/api/json/v1/1/search.php?s=${keyword}`;
+    createMeals(URL);
 }
 
 // Function to toggle favorites
